@@ -6,6 +6,7 @@ module.exports = {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				outfit: ['Outfit', 'sans-serif'],
+				manrope: ['Manrope', 'sans-serif'],
 			},
 			keyframes: {
 				fadeSlideDown: {
