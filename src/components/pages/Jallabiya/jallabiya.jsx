@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'; // ✅ add useEffect
 import ProductCard from '../Jallabiya/productCard';
 import Pagination from '../Jallabiya/pagination';
-import productData from '../../../products.json';
+import { productData } from '../../../products';
 import { useNavigate } from 'react-router-dom';
 import Nav from '../../nav';
 

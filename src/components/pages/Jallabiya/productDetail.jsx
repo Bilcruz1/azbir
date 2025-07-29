@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import products from '../../../products.json';
+import { productData } from '../../../products';
 import ProductCard from './productCard';
 import backIcon from '../../../assets/icons/back-icon.svg';
 import { CartContext } from '../../../contextApi/cartContext';
@@ -15,7 +15,7 @@ const ProductDetail = () => {
 	const [selectedColor, setSelectedColor] = useState('');
 	const [quantity, setQuantity] = useState(1);
 
-	const product = products.find(p => p.id.toString() === id);
+	const product = productData.find(p => p.id.toString() === id);
 
 	const handleAddToCart = () => {
 		if (!selectedSize || !selectedColor) {
@@ -188,7 +188,7 @@ const ProductDetail = () => {
 			<div className="mt-16 pb-[10px] hidden lg:block">
 				<h3 className="text-[24px] font-semibold ">You may also like</h3>
 				<div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-					{products.slice(0, 4).map(item => (
+					{productData.slice(0, 4).map(item => (
 						<ProductCard
 							key={item.id}
 							id={item.id}
@@ -198,6 +198,7 @@ const ProductDetail = () => {
 						/>
 					))}
 				</div>
+				3
 			</div>
 		</div>
 	);
