@@ -145,7 +145,7 @@ const ProductDetail = () => {
 						</select>
 					</div>
 
-					{/* Quantity */}
+					{/* Quantityy */}
 					<div className="mb-5">
 						<p className="font-medium text-[14px] text-[#383838] mb-3">
 							Quantity:
